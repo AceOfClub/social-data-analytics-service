@@ -1,15 +1,15 @@
 # Social data analytics service
 
-[![Build Status](https://travis-ci.org/AceOfSpade/social-data-analytics-service.svg?branch=master)](https://travis-ci.org/AceOfSpade/social-data-analytics-service)
-[![Codecov](https://img.shields.io/codecov/c/github/AceOfSpade/social-data-analytics-service.svg)](https://codecov.io/gh/AceOfSpade/social-data-analytics-service)
-[![Latest release](https://img.shields.io/github/release/AceOfSpade/social-data-analytics-service.svg)](https://github.com/AceOfSpade/social-data-analytics-service/releases)
+[![Build Status](https://travis-ci.org/AceOfClub/social-data-analytics-service.svg?branch=master)](https://travis-ci.org/AceOfClub/social-data-analytics-service)
+[![Codecov](https://img.shields.io/codecov/c/github/AceOfClub/social-data-analytics-service.svg)](https://codecov.io/gh/AceOfClub/social-data-analytics-service)
+[![Latest release](https://img.shields.io/github/release/AceOfClub/social-data-analytics-service.svg)](https://github.com/AceOfClub/social-data-analytics-service/releases)
 
 
 ## Start Server
 
 ```bash
-docker pull aceofspade/social-data-analytics-service:<<latest release>>
-docker run -p 8080:8080 -p 8081:8081 aceofspade/social-data-analytics-service:<<latest release>>
+docker pull aceofclub/social-data-analytics-service:<<latest release>>
+docker run -p 8080:8080 -p 8081:8081 aceofclub/social-data-analytics-service:<<latest release>>
 ```
 
 ## Social data by location
