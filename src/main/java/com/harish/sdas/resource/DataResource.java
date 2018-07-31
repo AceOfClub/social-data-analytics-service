@@ -1,7 +1,7 @@
 package com.harish.sdas.resource;
 
 import com.codahale.metrics.annotation.Timed;
-import com.harish.sdas.dto.out.Data;
+import com.harish.sdas.dto.Data;
 import com.harish.sdas.service.TwitterService;
 import lombok.extern.slf4j.Slf4j;
 import twitter4j.GeoLocation;

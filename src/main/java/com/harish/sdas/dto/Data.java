@@ -1,4 +1,4 @@
-package com.harish.sdas.dto.out;
+package com.harish.sdas.dto;
 
 import lombok.AllArgsConstructor;
 import lombok.EqualsAndHashCode;

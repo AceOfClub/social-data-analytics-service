@@ -1,8 +1,8 @@
 # Social data analytics service
 
-[![Build Status](https://travis-ci.org/aceofspade/social-data-analytics-service.svg?branch=master)](https://travis-ci.org/aceofspade/social-data-analytics-service)
-[![Codecov](https://img.shields.io/codecov/c/github/aceofspade/social-data-analytics-service.svg)](https://codecov.io/gh/aceofspade/social-data-analytics-service)
-[![Latest release](https://img.shields.io/github/release/aceofspade/social-data-analytics-service.svg)](https://github.com/aceofspade/social-data-analytics-service/releases)
+[![Build Status](https://travis-ci.org/AceOfSpade/social-data-analytics-service.svg?branch=master)](https://travis-ci.org/AceOfSpade/social-data-analytics-service)
+[![Codecov](https://img.shields.io/codecov/c/github/AceOfSpade/social-data-analytics-service.svg)](https://codecov.io/gh/AceOfSpade/social-data-analytics-service)
+[![Latest release](https://img.shields.io/github/release/AceOfSpade/social-data-analytics-service.svg)](https://github.com/AceOfSpade/social-data-analytics-service/releases)
 
 
 ## Start Server
