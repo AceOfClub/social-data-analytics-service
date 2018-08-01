@@ -10,5 +10,5 @@ script:
   - docker build --build-arg build_env=ci -t $DOCKER_USERNAME/social-data-analytics-service:$TRAVIS_COMMIT .
 after_success:
   - test -n "$TRAVIS_TAG" && docker login -u "$DOCKER_USERNAME" -p "$DOCKER_PASSWORD"
-  - test -n "$TRAVIS_TAG" && docker tag $DOCKER_USERNAME/sdas:$TRAVIS_COMMIT $DOCKER_USERNAME/social-data-analytics-service:$TRAVIS_TAG
+  - test -n "$TRAVIS_TAG" && docker tag $DOCKER_USERNAME/social-data-analytics-service:$TRAVIS_COMMIT $DOCKER_USERNAME/social-data-analytics-service:$TRAVIS_TAG
   - test -n "$TRAVIS_TAG" && docker push $DOCKER_USERNAME/social-data-analytics-service:$TRAVIS_TAG
