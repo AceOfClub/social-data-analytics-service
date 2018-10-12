@@ -1,0 +1,20 @@
+CREATE TABLE sdc_twitter_main (
+	id bigint NOT NULL,
+	created_at timestamp NULL,
+	email text NULL,
+	hash_tags text NULL,
+	in_reply_to_screen_name text NULL,
+	in_reply_to_status_id bigint NULL,
+	in_reply_to_user_id bigint NULL,
+	is_favorite boolean NULL,
+	is_truncated boolean NULL,
+	latitude double precision NULL,
+	"location" text NULL,
+	longitude double precision NULL,
+	"name" text NULL,
+	retweeted boolean NULL,
+	retweeted_count bigint NULL,
+	"source" text NULL,
+	"text" text NULL,
+	CONSTRAINT sdc_twitter_main_pkey PRIMARY KEY (id)
+);

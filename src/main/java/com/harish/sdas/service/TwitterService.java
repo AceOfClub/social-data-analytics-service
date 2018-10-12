@@ -1,14 +1,17 @@
 package com.harish.sdas.service;
 
 import lombok.extern.slf4j.Slf4j;
+import org.springframework.stereotype.Service;
 import twitter4j.*;
 import twitter4j.conf.ConfigurationBuilder;
 
 import java.util.ArrayList;
 import java.util.List;
 
-@Slf4j // Adds logger to the class for more info visit projectlombok.org
+@Slf4j
+@Service
 public class TwitterService {
+
     public List<Status> getTweetsInLocation(GeoLocation geoLocation, Double radius) {
         return getTweetsForQuery(new Query().geoCode(geoLocation, radius, Query.KILOMETERS.toString()));
     }
