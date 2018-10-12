@@ -62,7 +62,7 @@ public class SocialDataService {
         twitterRepository.saveAll(twitterDataWithLocation);
 
         return twitterDataWithLocation.stream()
-                .map(tw -> new KeywordData(tw.getLatitude(), tw.getLatitude()))
+                .map(tw -> new KeywordData(tw.getLatitude(), tw.getLongitude()))
                 .collect(toList());
     }
 

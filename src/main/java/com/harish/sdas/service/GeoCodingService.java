@@ -8,6 +8,7 @@ import lombok.extern.slf4j.Slf4j;
 import org.springframework.stereotype.Service;
 import twitter4j.GeoLocation;
 
+import java.util.Arrays;
 import java.util.Map;
 import java.util.Set;
 
@@ -28,8 +29,11 @@ public class GeoCodingService {
                     try {
                         GeocodingResult[] results = GeocodingApi.geocode(context,
                                 address).await();
-                        LatLng location = results[0].geometry.location;
-                        return new GeoLocation(location.lat, location.lng);
+                        log.info(Arrays.asList(results).toString());
+                        if(results.length > 0 ) {
+                            LatLng location = results[0].geometry.location;
+                            return new GeoLocation(location.lat, location.lng);
+                        }
                     } catch (Exception e) {
                         log.error("unable to fetch location", e);
                     }
