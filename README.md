@@ -1,7 +1,6 @@
 # Social data analytics service
 
 [![Build Status](https://travis-ci.org/AceOfClub/social-data-analytics-service.svg?branch=master)](https://travis-ci.org/AceOfClub/social-data-analytics-service)
-[![Codecov](https://img.shields.io/codecov/c/github/AceOfClub/social-data-analytics-service.svg)](https://codecov.io/gh/AceOfClub/social-data-analytics-service)
 [![Latest release](https://img.shields.io/github/release/AceOfClub/social-data-analytics-service.svg)](https://github.com/AceOfClub/social-data-analytics-service/releases)
 
 

@@ -8,8 +8,7 @@ RUN ./gradlew build
 # Copy all project and build it
 # This layer is rebuilt when ever a file has changed in the project directory
 COPY src/ ./src
-RUN ./gradlew build jacocoTestReport --stacktrace
-RUN bash -c "test \"$build_env\" == \"ci\" && eval 'bash <(curl -s https://codecov.io/bash)' || echo 'Skipping codecov update'"
+RUN ./gradlew build --stacktrace
 
 FROM openjdk:8-jre-alpine
 WORKDIR /app
