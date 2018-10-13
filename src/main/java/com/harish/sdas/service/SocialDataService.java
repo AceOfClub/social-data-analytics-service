@@ -41,6 +41,7 @@ public class SocialDataService {
 
         Map<String, Long> hashTagCount = twitterDataWithLocation.stream()
                 .flatMap(d -> d.getHashTags().stream())
+                .filter(hashTag -> hashTag != null && !hashTag.trim().isEmpty())
                 .collect(Collectors.groupingBy(identity(), counting()));
 
         List<LocationData> locationData = hashTagCount.entrySet().stream()
